@@ -1,0 +1,20 @@
+{
+    "name": "chriswillerton/searchable",
+    "description": "Searchable trait for Laravel Eloquent models.",
+    "keywords": ["laravel", "eloquent", "model", "search", "searchable"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Willerton"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChrisWillerton\\Searchable\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
