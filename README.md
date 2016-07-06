@@ -9,11 +9,11 @@ This trait uses a full text search, along with a results collection to sort mult
 
 Add the following to the `composer.json` file in your project:
 
-    "chriswillerton/searchable": "1.0.0"
+    "chriswillerton/searchable": "dev-master"
 
 or you can run the below on the command line in the root of your project:
 
-    composer require "chriswillerton/searchable" "1.0.0"
+    composer require "chriswillerton/searchable" "dev-master"
 
 
 ## Setup
