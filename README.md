@@ -28,7 +28,7 @@ To get started, add the trait to the model:
 
 		protected $full_text_index = 'title, content';
 
-You also need to define the full text index that you've setup in your database. Do this as property on the model called `$full_text_index`.
+You also need to define the full text index that you've setup in your database. Add this as a property on your model called `$full_text_index`.
 
 
 ## Usage
