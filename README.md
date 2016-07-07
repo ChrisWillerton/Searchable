@@ -2,7 +2,7 @@
 
 Searchable trait for Laravel Eloquent models.
 
-This trait uses a full text search, along with a results collection to sort multiple model searches by relevance.
+This trait uses a full text search to search individual models. A results collection is provided to help sort multiple model searches by relevance.
 
 
 ## Installation
@@ -28,7 +28,7 @@ To get started, add the trait to the model:
 
 		protected $full_text_index = 'title, content';
 
-You also need to define the full text index that you've setup in your database.
+You also need to define the full text index that you've setup in your database. Do this as property on the model called `$full_text_index`.
 
 
 ## Usage
@@ -40,7 +40,7 @@ You can use searchable as below:
 		->get();
 
 
-The collection is used for searching multiple models that implement the searchable trait. Imagine you have an Article, Post, and Product class, but you want results from all of these mixed together and sorted by relevance. You could do something like the below:
+The collection is used for collecting multiple model search results together and making it easy to sort the whole collection by relevance. Imagine you have an Article, Post, and Product class, but you want results from all of these mixed together and sorted by relevance. You could do something like the below:
 
 	// Set which models we wish to search
 	$models_to_search = [
