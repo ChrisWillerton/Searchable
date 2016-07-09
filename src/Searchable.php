@@ -37,8 +37,11 @@ trait Searchable
 		// Remove anything that isn't a word or a space character
 		$term = trim(preg_replace('/[^\w\s]+/', ' ', $term));
 
-		// Add + operator for each word, meaning the word must be present
-		$term = '+' . preg_replace('/\s+/', ' +', $term);
+		if ($term)
+		{
+			// Add + operator for each word, meaning the word must be present
+			$term = '+' . preg_replace('/\s+/', ' +', $term);
+		}
 
 		return $term;
 	}
