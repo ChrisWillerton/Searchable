@@ -9,11 +9,11 @@ This trait uses a full text search to search individual models. A results collec
 
 Add the following to the `composer.json` file in your project:
 
-    "chriswillerton/searchable": "dev-master"
+    "chriswillerton/searchable": "1.*"
 
 or you can run the below on the command line in the root of your project:
 
-    composer require "chriswillerton/searchable" "dev-master"
+    composer require "chriswillerton/searchable" "1.*"
 
 
 ## Setup
