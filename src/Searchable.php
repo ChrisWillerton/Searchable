@@ -12,7 +12,7 @@ trait Searchable
 	{
 		if (!$this->full_text_index)
 		{
-			throw new SearchableFullTextException('Missing $full_text_index property.');
+			throw new SearchableFullTextException('Missing $full_text_index property in ' . __class__);
 		}
 
 		$term = $this->prepareTerm($term);
